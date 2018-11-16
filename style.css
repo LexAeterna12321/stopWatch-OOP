@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+}
+.stopWatch {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  transform: translate(-50%, -50%);
+  background-color: #b1b1c2;
+  border: 2px solid aqua;
+  -webkit-clip-path: polygon(
+    0% 15%,
+    15% 15%,
+    35% 0,
+    68% 0,
+    85% 15%,
+    100% 15%,
+    100% 85%,
+    85% 85%,
+    85% 100%,
+    15% 100%,
+    15% 85%,
+    0% 85%
+  );
+  clip-path: polygon(
+    0% 15%,
+    15% 15%,
+    35% 0,
+    68% 0,
+    85% 15%,
+    100% 15%,
+    100% 85%,
+    85% 85%,
+    85% 100%,
+    15% 100%,
+    15% 85%,
+    0% 85%
+  );
+}
+.time,
+.startStop,
+.reset {
+  text-align: center;
+  position: absolute;
+  background-color: #eee;
+  color: tomato;
+  text-transform: uppercase;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.time {
+  font-size: 32px;
+  letter-spacing: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 25%;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.startStop {
+  width: 30%;
+  bottom: 20%;
+  left: 17%;
+  height: 10%;
+}
+.reset {
+  width: 30%;
+  bottom: 20%;
+  right: 17%;
+  height: 10%;
+}
