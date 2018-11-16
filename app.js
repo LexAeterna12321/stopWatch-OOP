@@ -24,6 +24,7 @@ class StopWatch {
     }
   }
   reset() {
+    this.startStopBtn.textContent = "START";
     this.time = 0;
     this.timeValue.textContent = `0.00`;
     this.running = false;
