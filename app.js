@@ -28,7 +28,6 @@ class StopWatch {
     this.timeValue.textContent = `0.00`;
     this.running = false;
     clearInterval(this.interval);
-    // return this.time;
   }
 }
 (function init() {
